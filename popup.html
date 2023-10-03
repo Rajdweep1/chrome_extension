@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deep Work Timer</title>
+    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .greeting {
+            margin-bottom: 15px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .music-player {
+            margin-top: 20px;
+        }
+
+        .song-name {
+            margin-bottom: 10px;
+        }
+
+        .control-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="greeting" id="greeting">Greetings User</h2>
+    <h3>Quote of the day :</h3>
+    <p class="quote" id="quote">Loading quote of the day...</p>
+    
+    <button class="button" id="dashboardButton">Go to Dashboard</button>
+    <ul class="task-list" id="taskList">
+        <!-- Demo tasks (to be filled dynamically with JavaScript) -->
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+    <div class="music-player">
+        <div class="song-name" id="songName"></div>
+        <div class="control-buttons">
+            <button id="leftSkipButton">&lt;&lt;</button>
+            <button id="playPauseButton">Play</button>
+            <button id="rightSkipButton">&gt;&gt;</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

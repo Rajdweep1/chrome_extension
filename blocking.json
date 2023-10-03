@@ -1,0 +1,32 @@
+[
+    {  
+      "id": 1,
+      "action": { 
+        "type": "block" 
+      },  
+      "condition": {
+        "urlFilter": "https://www.facebook.com/",
+        "resourceTypes": ["main_frame"] 
+      }
+    },
+    {
+      "id": 2,  
+      "action": {  
+        "type": "block" 
+      },
+      "condition": {
+        "urlFilter": "https://twitter.com",
+        "resourceTypes": ["main_frame"]   
+      } 
+    },
+    {
+        "id": 3,  
+        "action": {  
+          "type": "block" 
+        },
+        "condition": {
+          "urlFilter": "https://www.instagram.com/",
+          "resourceTypes": ["main_frame"]   
+        } 
+      }
+   ]

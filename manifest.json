@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Deep Work Timer",
+    "version": "1.0",
+    "description": "A productivity extension to manage your deep work sessions.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "declarativeNetRequestWithHostAccess",
+        "webNavigation"
+    ],
+    "action" :{
+        "default_popup": "popup.html"
+    },
+    "host_permissions": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://instagram.com"
+      ],
+    
+    
+    "declarative_net_request": {
+        "rule_resources": [
+          {
+            "id": "blocking",
+            "enabled": true,
+            "path": "blocking.json"  
+          }
+        ]
+       },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
